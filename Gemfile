@@ -12,7 +12,9 @@ gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
-gem "rubocop"
+gem "rubocop", ">= 0.47", require: false
+gem "rubocop-performance", require: false
+gem "rubocop-rails", require: false
 # gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
 
