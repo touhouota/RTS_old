@@ -11,6 +11,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_DB: app_test
     working_directory: ~/repo
+    parallelism: 4
     steps:
       - checkout
       - restore_cache:
@@ -39,6 +40,7 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_DB: app_test
     working_directory: ~/repo
+    parallelism: 4
     steps:
       - checkout
       - restore_cache:
