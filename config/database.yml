@@ -4,6 +4,7 @@ default: &default
   timeout: 5000
   charset: utf8
   port: 3306
+  host: <%= ENV['DB_HOST'] %>
 
 development:
   <<: *default
