@@ -1,47 +1,7 @@
-swagger: "2.0"
+openapi: 3.0.0
 info:
-  description: "Rslのパス"
-  version: "0.0.1"
-  title: "Rsl API"
+  description: Rslのパス
+  version: 0.0.1
+  title: Rsl API
   contact:
-    email: "touhouota.register@gmail.com"
-produces:
-  - "application/json"
-consumes:
-  - application/x-www-form-urlencoded
-paths:
-  /tasks:
-    get:
-      summary: "タスク一覧を取得"
-      description: "ユーザのタスク一覧を取得"
-      tags:
-      - 'tasks'
-      responses:
-        200:
-          description: "成功時のレスポンス"
-          schema:
-            $ref: '#/definitions/Tasks'
-
-definitions:
-  Tasks:
-    type: object
-    required:
-      - list
-    properties:
-      list:
-        type: array
-        items:
-          $ref: "#/definitions/Task"
-  Task:
-    type: object
-    required:
-      - id
-      - task_name
-      - status
-    properties:
-      id:
-        type: "string"
-      task_name:
-        type: "string"
-      status:
-        type: "integer"
+    email: touhouota.register@gmail.com
