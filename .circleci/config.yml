@@ -27,7 +27,7 @@ jobs:
           command: |
             sudo gem update --system
             sudo gem uninstall bundler
-            sudo gem install bundler
+            sudo gem install --force bundler
       - run:
           name: bundle install
           command: bundle install --jobs=4 --retry=3 --path vendor/bundle
@@ -77,7 +77,7 @@ jobs:
           command: |
             sudo gem update --system
             sudo gem uninstall bundler
-            sudo gem install bundler
+            sudo gem install --force bundler
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
       # Rspec
