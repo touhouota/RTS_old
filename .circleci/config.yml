@@ -24,7 +24,10 @@ jobs:
           command: dockerize -wait tcp://127.0.0.1:3306 -timeout 120s
       - run:
           name: system bundler update
-          command: sudo gem update --system
+          command: |
+            sudo gem update --system
+            sudo gem uninstall bundler
+            sudo gem install bundler
       - run:
           name: bundle install
           command: bundle install --jobs=4 --retry=3 --path vendor/bundle
@@ -71,7 +74,10 @@ jobs:
           command: dockerize -wait tcp://127.0.0.1:3306 -timeout 120s
       - run:
           name: system bundler update
-          command: sudo gem update --system
+          command: |
+            sudo gem update --system
+            sudo gem uninstall bundler
+            sudo gem install bundler
       - run: bundle exec rake db:create
       - run: bundle exec rake db:schema:load
       # Rspec
