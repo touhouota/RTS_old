@@ -253,6 +253,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
+  committee
   committee-rails
   factory_bot_rails
   jbuilder (~> 2.5)
