@@ -203,6 +203,8 @@ GEM
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
+    simpacker (1.1.0)
+      railties (>= 4.2)
     slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
@@ -267,6 +269,7 @@ DEPENDENCIES
   rubocop-rails
   sassc-rails
   selenium-webdriver
+  simpacker
   slim
   spring
   spring-watcher-listen (~> 2.0.0)

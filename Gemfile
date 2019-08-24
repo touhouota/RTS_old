@@ -17,6 +17,7 @@ gem "jbuilder", "~> 2.5"
 gem "rubocop", ">= 0.47", require: false
 gem "rubocop-performance", require: false
 gem "rubocop-rails", require: false
+gem "simpacker"
 # gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
 
