@@ -5,7 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.6.3"
 
-gem "rails", "~> 5.2.3"
+gem "rails", "~> 6.0.0"
 # gem "sqlite3"
 gem "mysql2"
 gem "puma", "~> 3.11"
@@ -17,6 +17,8 @@ gem "jbuilder", "~> 2.5"
 gem "rubocop", ">= 0.47", require: false
 gem "rubocop-performance", require: false
 gem "rubocop-rails", require: false
+gem "foreman"
+gem "simpacker"
 # gem "redis", "~> 4.0"
 # gem "bcrypt", "~> 3.1.7"
 
